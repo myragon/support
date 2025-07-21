@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "scripts": {
-        "csfix": "./vendor/bin/php-cs-fixer fix src",
+        "csfix": "./vendor/bin/php-cs-fixer fix",
         "phpstan": "./vendor/bin/phpstan analyse -c phpstan.neon"
     },
     "homepage": "https://github.com/myragon",
