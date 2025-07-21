@@ -1,9 +1,14 @@
 <?php
 
 if (! function_exists('dprint')) {
-    function dprint(mixed $value): never
+    function dprint(mixed ...$values): never
     {
-        echo "<pre>" . print_r($value, true) . "</pre>";
+        $html = '';
+        foreach ($values as $value) {
+            $html = $html . "<pre>" . print_r($value, true) . "</pre><br>";
+        }
+
+        echo $html;
         die();
     }
 }
