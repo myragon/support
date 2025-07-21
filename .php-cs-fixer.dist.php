@@ -10,4 +10,4 @@ return (new PhpCsFixer\Config())
         '@PHP84Migration' => true,
     ])
     ->setFinder($finder)
-    ->setCacheFile(__DIR__ . './tmp/.php-cs-fixer.cache');
+    ->setCacheFile(__DIR__ . '/tmp/.php-cs-fixer.cache');
